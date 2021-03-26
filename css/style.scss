@@ -24,6 +24,7 @@ $secondary-button-color: #757575;
 body {
   height: 100vh;
   overflow: hidden;
+  background: #fff;
 }
 
 nav {
@@ -193,4 +194,23 @@ h1 {
   body {
     display: none;
   }
+}
+
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+  .logo img {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  * {
+    color: black;
+    font-weight: 590;
+  }
+}
+
+p:last-of-type {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
 }

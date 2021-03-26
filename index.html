@@ -64,5 +64,15 @@
       <a href="https://github.com/manikangkandas">github </a>
       <a href="https://codepen.io/manikangkandas">codepen</a>
     </div>
+    <p>Press Enter to enable | disable dark mode</p>
   </body>
+
+  <script>
+    document.onkeypress = function (e) {
+      e = e || window.event;
+      if (e.keyCode === 13) {
+        document.documentElement.classList.toggle("dark-mode");
+      }
+    };
+  </script>
 </html>
